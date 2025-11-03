@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DhofarCare — Home Services in Dhofar</title>
+  <meta name="description" content="Book trusted home services across Dhofar Governorate with DhofarCare. 24/7 support, verified providers, simple booking."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="DhofarCare" class="logo"/>
+      <span class="brand-name">DhofarCare</span>
+    </div>
+    <nav class="nav">
+      <a href="#book">Book</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#more">More Info</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cta" href="#book">Book Now</a>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <h1>Smart Home Services across <span class="highlight">Dhofar</span></h1>
+      <p>Book cleaning, maintenance, and beauty-at-home with verified local providers and 24/7 support.</p>
+      <ul class="ticks">
+        <li>✅ Local & verified providers</li>
+        <li>✅ Clear price ranges</li>
+        <li>✅ Fast booking & instant confirmation</li>
+      </ul>
+      <div class="hero-actions">
+        <a href="#book" class="btn primary">Start Booking</a>
+        <a href="#services" class="btn ghost">Explore Services</a>
+      </div>
+
+      <!-- Static auto-reply -->
+      <div class="auto-reply">
+        <strong>Auto-reply (24/7):</strong>
+        Welcome to <b>DhofarCare</b>! How can we help you today?
+        If you ask about services: “Yes — what service do you need?”
+        If you ask about price: “Prices vary by service and issue.”
+        For anything else: “WhatsApp <span class="phone"></span>, email <span class="email"></span>, or call our hotline.”
+        <br/>Thank you!
+      </div>
+
+      <!-- AI Assistant -->
+      <div class="ai-box">
+        <div class="ai-header">🤖 DhofarCare Virtual Assistant</div>
+        <div id="aiLog" class="ai-log">
+          <div class="msg ai"><b>Welcome</b> to DhofarCare auto-reply! I can help with services, pricing, and booking.</div>
+          <div class="msg hint">Quick questions: services • price • contact</div>
+        </div>
+        <div class="ai-quick">
+          <button class="qbtn" data-q="What services are available?">Services</button>
+          <button class="qbtn" data-q="How much does it cost?">Price</button>
+          <button class="qbtn" data-q="How can I contact you?">Contact</button>
+        </div>
+        <div class="ai-input">
+          <input id="aiInput" type="text" placeholder="Type your question…" />
+          <button id="aiSend" class="btn primary" type="button">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <video class="side-video" src="assets/hero-video.mp4" autoplay muted loop playsinline></video>
+      <img class="fallback" src="assets/platform-3d.png" alt="DhofarCare concept"/>
+    </div>
+  </section>
+
+  <section class="banner">
+    <p>Service area: <span class="area"></span> • Support: <span class="email"></span></p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Popular Services</h2>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="Home Cleaning">
+        <h3>Home Cleaning ✨</h3>
+        <p>Standard / Deep cleaning; kitchens & bathrooms. Family- and pet-safe.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="Maintenance">
+        <h3>Maintenance 🛠️</h3>
+        <p>AC checks, plumbing, electrical fixes, furniture assembly, and more.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="Beauty at Home">
+        <h3>Beauty at Home 💅</h3>
+        <p>At-home salon sessions by vetted specialists — comfort and privacy.</p>
+      </article>
+      <article class="card">
+        <img src="assets/home-services.jpg" alt="Specialty">
+        <h3>Specialty 🧼</h3>
+        <p>Sofas & carpets, move-in/out cleaning, post-event cleanups, and more.</p>
+      </article>
+    </div>
+    <div class="center mt">
+      <a href="#book" class="btn primary">Book in 60 seconds</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div>
+        <h2>About DhofarCare</h2>
+        <p>DhofarCare connects Dhofar households with trusted providers. We empower local micro-entrepreneurs and make home services simple, transparent, and safe — aligned with Oman Vision 2040.</p>
+        <ul class="emoji-list">
+          <li>📍 Dhofar-first coverage</li>
+          <li>🛡️ Verified providers</li>
+          <li>💳 Simple demo checkout</li>
+          <li>🤝 Community-driven</li>
+        </ul>
+      </div>
+      <img src="assets/platform-3d.png" alt="DhofarCare concept" class="about-img"/>
+    </div>
+  </section>
+
+  <section id="more" class="more">
+    <h2>More Info about DhofarCare</h2>
+    <div class="more-grid">
+      <div class="more-card">
+        <h3>What we offer</h3>
+        <p>Cleaning, maintenance, beauty at home, and specialty services (sofas & carpets, post-event, move-in/out).</p>
+      </div>
+      <div class="more-card">
+        <h3>Who we serve</h3>
+        <p>Families across Dhofar’s wilayats, residents and students, and furnished apartment owners who need reliable, fast service.</p>
+      </div>
+      <div class="more-card">
+        <h3>Why now</h3>
+        <p>Demand is rising and digital booking with instant communication is now essential for a smooth, transparent experience.</p>
+      </div>
+      <div class="more-card">
+        <h3>Value</h3>
+        <p>Empowers local providers and improves quality via ratings and transparency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="booking">
+    <h2>Book a Service</h2>
+    <form id="bookingForm" class="form">
+      <div class="row">
+        <label>Full Name
+          <input type="text" name="name" required placeholder="Your name">
+        </label>
+        <label>Phone (Oman)
+          <input type="tel" name="userphone" required placeholder="+9685xxxxxxx">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Dhofar Wilaya
+          <select name="wilayah" id="wilayah" required>
+            <option value="" disabled selected>Select wilaya</option>
+            <option>Salalah</option>
+            <option>Taqah</option>
+            <option>Mirbat</option>
+            <option>Rakhyut</option>
+            <option>Dhalkut</option>
+            <option>Thumrait</option>
+            <option>Al Mazyona</option>
+            <option>Maqshin</option>
+            <option>Shalim & Hallaniyat Islands</option>
+            <option>Sadah</option>
+          </select>
+        </label>
+        <label>Detailed Address
+          <input type="text" name="address" required placeholder="Street, nearby landmark...">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Service
+          <select name="service" required>
+            <option value="" disabled selected>Select service</option>
+            <option>Home Cleaning</option>
+            <option>Maintenance</option>
+            <option>Beauty at Home</option>
+            <option>Specialty</option>
+          </select>
+        </label>
+        <label>Date & Time
+          <input type="datetime-local" name="datetime" id="datetime" required inputmode="none" readonly>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Notes
+          <input type="text" name="notes" placeholder="Any notes (optional)">
+        </label>
+        <label>Payment (Demo)
+          <select name="pay" required>
+            <option value="" disabled selected>Select method</option>
+            <option>Card</option>
+            <option>Cash on site</option>
+          </select>
+        </label>
+      </div>
+
+      <button class="btn primary" type="submit">Save & Continue</button>
+      <p class="muted">Demo only — no real charges.</p>
+    </form>
+
+    <!-- Inline success toast for booking -->
+    <div id="toast" class="toast hidden">✔ Booking registered successfully</div>
+
+    <div id="paymentPanel" class="payment hidden">
+      <h3>Enter Card Details (Demo)</h3>
+      <form id="paymentForm" class="form">
+        <div class="row">
+          <label>Name on Card
+            <input type="text" name="cardname" required>
+          </label>
+          <label>Card Number
+            <input type="text" name="cardnumber" required maxlength="19" placeholder="4242 4242 4242 4242">
+          </label>
+        </div>
+        <div class="row">
+          <label>Expiry (MM/YY)
+            <input type="text" name="exp" required maxlength="5" placeholder="12/27">
+          </label>
+          <label>CVC
+            <input type="password" name="cvc" required maxlength="4" placeholder="***">
+          </label>
+        </div>
+        <button class="btn primary" type="submit">Pay & Confirm</button>
+        <button class="btn ghost" type="button" id="backToBooking">Back</button>
+        <p class="muted">Demo for presentation only.</p>
+      </form>
+    </div>
+
+    <div id="successPanel" class="success hidden">
+      <div class="bigcheck">✔</div>
+      <h3>Booking Received</h3>
+      <p>Your request has been recorded successfully. You’ll receive an email/SMS shortly. For urgent questions, WhatsApp <span class="phone"></span>.</p>
+      <a class="btn primary" href="#home" id="newBooking">Make another booking</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Quick Chat 💬</h3>
+        <p>WhatsApp: <a class="phoneLink"><span class="phone"></span></a></p>
+        <p>Auto-reply: <span class="hours"></span></p>
+      </div>
+      <div class="contact-card">
+        <h3>Email 📧</h3>
+        <p><a class="emailLink"><span class="email"></span></a></p>
+        <p>We usually respond within minutes.</p>
+      </div>
+      <div class="contact-card">
+        <h3>Address 📍</h3>
+        <p class="address"></p>
+        <p class="area"></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="brand">
+      <img src="assets/logo.png" alt="" class="logo small"/> <strong>DhofarCare</strong>
+    </div>
+    <p>© <span id="year"></span> DhofarCare • All rights reserved • Dhofar, Oman</p>
+  </footer>
+</body>
+</html>
